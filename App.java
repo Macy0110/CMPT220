@@ -1,56 +1,44 @@
+
+// Macy Robbins, Data Science and Analytics Major 
+import java.util.Scanner; 
 public class App {
     public static void main(String[] args) throws Exception {
-    //for this section: are these all printing the best option? If they aren't, fix it!
-        //(However you interpret 'fix' is fine i promise, any way you fix it shows you get the concept to me)
-        int var1 = 4;
-        if (var1 > 4){
-            System.out.println("Var1 is greater than 4");
-         } else if (var1 == 4) {
-                System.out.println("Var1 is 4");
-            }
-          else {
-            System.out.println("Var1 is less than 4");
-        }
-        // add an elif for if it's exactly 4
-
-        int var2 = 6;
-        if (var2 == 6){
-            System.out.println("Var2 is 5");
-        } else if (var2 > 5){
-            System.out.println("Var2 is greater than 5");
+        Scanner sc = new Scanner (System.in);
+        System.out.println("This is a Valorant quiz Game");
+        System.out.println("How many seconds does a clove smoke last? ");
+        int score = 0; 
+        int answerone = sc.nextInt (); 
+        if (answerone == 13) {
+            System.out.println("Correcct");
+            score = +1;
+            System.out.println("Your score is " + score); 
         } else {
-            System.out.println("Var2 is less than 5");
-        } 
-        
-        // just take out the else for 6 and change the first if to 6
-        
-
-        int var3 = 5;
-        if (var3 > 10){
-            System.out.println("Var3 is greater than 10");
-        } else if (var3< 10) {
-            System.out.println("Var3 is less than 10");
-        }else {
-            System.out.println("Var3 is equal to 10");
+            System.out.println("Incorrect");
         }
-// change else to var = 10 and the current else to an elif 
-
-    
-
-        //for this section: why are we not entering the if statement?
-        if ("Marist" == "marist"){
-            System.out.println("Marist college!");
-        } else{
-            System.out.println("Not marist college :(!");
+        sc.nextLine();
+        System.out.println("What is the name of Raze's ultimate ability? ");
+        String answer2 = sc.nextLine();
+        if (answer2.equals( "Showstopper")|| answer2.equals("showstopper") || answer2.equals( "ShowStopper")) { 
+            System.out.println("Correct");
+            score = +2; 
+            System.out.println("Your score is " + score);
+        } else {
+            System.out.println("Incorrect");
         }
-    }
+        System.out.println("How many seconds does it take for the spike to explode? ");
+        int answerthree = sc.nextInt();
+        if (answerthree == 7){
+            System.out.println("Correct");
+            score = score +1;
+            System.out.println("Your final score is " + score);
+        } else {
+            System.out.println("Incorrect");
+        }
+
+
+
 }
-    
-// because java is case senstve, so Marist doesn't equal marist 
-
-    
-
-
-
-    
-
+}
+// I learned how to use if/ else if/ else statements in java as well as the and or syntax. 
+// I'm also learning that a lot of the stuff I learned in python can be used for java, but it's usually going 
+// to be with different syntax. 
