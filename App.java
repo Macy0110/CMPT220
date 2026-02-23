@@ -1,44 +1,53 @@
-
-// Macy Robbins, Data Science and Analytics Major 
-import java.util.Scanner; 
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner (System.in);
-        System.out.println("This is a Valorant quiz Game");
-        System.out.println("How many seconds does a clove smoke last? ");
-        int score = 0; 
-        int answerone = sc.nextInt (); 
-        if (answerone == 13) {
-            System.out.println("Correcct");
-            score = +1;
-            System.out.println("Your score is " + score); 
-        } else {
-            System.out.println("Incorrect");
+        Scanner sc = new Scanner(System.in);
+        //P1: This one only prints 0-9, can you fix it so it prints 1-10?
+        System.out.println("Problem 1");
+        for (int i = 0; i <= 10; i++){
+            System.out.println(i);
         }
-        sc.nextLine();
-        System.out.println("What is the name of Raze's ultimate ability? ");
-        String answer2 = sc.nextLine();
-        if (answer2.equals( "Showstopper")|| answer2.equals("showstopper") || answer2.equals( "ShowStopper")) { 
-            System.out.println("Correct");
-            score = +2; 
-            System.out.println("Your score is " + score);
-        } else {
-            System.out.println("Incorrect");
+
+        //P2: Ask the user for a number. Create a loop to find the factorial of it
+        //(factorial = X!, X being the user input, Factorials are every digit before X multiplied together)
+        System.out.println("Problem 2");
+        System.out.println("Enter a number and I will tell you the factorial: ");
+        int num = sc.nextInt(); 
+        int factorial = 1;
+        for (int i = 1; i <= num; i++){
+            factorial = factorial * i; 
+            
         }
-        System.out.println("How many seconds does it take for the spike to explode? ");
-        int answerthree = sc.nextInt();
-        if (answerthree == 7){
-            System.out.println("Correct");
-            score = score +1;
-            System.out.println("Your final score is " + score);
-        } else {
-            System.out.println("Incorrect");
+        System.out.println("Your facrotiral is " + factorial);
+        //here's a hint
+
+        //for (int i = 0; i < ?; i++){
+
+        
+
+        //P3: Ask the user for a number, and then add together every OTHER digit (starting from 1)
+        System.out.println("Problem 3");
+        System.out.println("Enter a number and I will tell you the sum of every other number: ");
+        int numtwo= sc.nextInt(); 
+        int sum= 0;
+        //No hint! what do you need to complete this task?
+        for ( int k = 1; k <= numtwo; k+=2) {
+            sum+= k; 
+        }
+        System.out.println(sum); 
+
+
+        //P4: Why does this loop never stop!
+        //what can you do to break out of the loop after it prints once?
+        System.out.println("Problem 4");
+        boolean run = true;
+        while (run == true){
+            System.out.println("I printed once!");
+            run = false; 
         }
 
 
-
+    }
 }
-}
-// I learned how to use if/ else if/ else statements in java as well as the and or syntax. 
-// I'm also learning that a lot of the stuff I learned in python can be used for java, but it's usually going 
-// to be with different syntax. 
+
+
