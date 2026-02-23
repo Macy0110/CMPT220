@@ -45,8 +45,16 @@ public class App {
             System.out.println("I printed once!");
             run = false; 
         }
-
-
+         //P5: Take a string from the user and print them the reverse!
+        System.out.println("Problem 5");
+        //hint
+        System.out.println("Enter a string");
+        sc.nextLine(); 
+        String yourstring = sc.nextLine(); 
+        //String reverse = "";
+        for ( int p= yourstring.length()-1; p >= 0; p-- ){
+        System.out.println(yourstring.charAt(p));
+    }
     }
 }
 
