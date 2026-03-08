@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //Macy Robbins, Soft Dev MT Project
 
-public class App {
+public class CMPT220_MT_Project {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in); 
         //get trial numbers from user 
