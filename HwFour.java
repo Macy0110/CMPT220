@@ -24,6 +24,8 @@ public class HwFour {
             System.out.println(myArray[i] + " comes up " + count + " times");
         }
       }
+        //I learned how to create a more advanced loop AND see how many times something appears 
+        //more than once AND add how many times it appeared to a count because obv I already know how loops work, but this was rly different and a lot harder. 
 
 
       
